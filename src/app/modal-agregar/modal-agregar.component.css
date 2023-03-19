@@ -1,0 +1,37 @@
+#btnAgregar{
+    float: right;
+    margin-bottom: 1rem;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.modal-body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
+}
+.modal-header{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#footer{
+    margin-top: 3rem;
+}
+.form-check{
+    margin-top: 5px;
+}
+.advertencia{
+    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.modalAgregar{
+    display: block;
+}
+.modal-content{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    margin:0 auto;
+    
+}

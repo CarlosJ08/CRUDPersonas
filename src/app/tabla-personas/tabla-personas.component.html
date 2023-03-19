@@ -1,0 +1,33 @@
+
+<div class="tabla">
+<app-modal-agregar (aviso)="ngOnInit()" ></app-modal-agregar>
+
+<table class="table table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">
+          <p>Nombre  </p> 
+         <input (input)="Refrescar()" type="text" id="filtroNombre" class="form-control">
+          </th>
+        <th scope="col"><p>Apellido </p>
+          <input (input)="Refrescar()" type="text" id="filtroApellido" class="form-control">
+        </th>
+        <th scope="col"><p>Genero </p>
+          <input (input)="Refrescar()" type="text" id="filtroGenero" class="form-control" >
+        </th>
+        <th scope="col"><p>Acciones </p> <br></th>
+       
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personasConFiltro">
+       <td>{{persona.nombre}}</td>
+       <td>{{persona.apellido}}</td>
+       <td>{{persona.genero}}</td>
+        <td><app-modal-modificar (aviso)="ObtenerDatos()" [persona]="persona"></app-modal-modificar> <app-modal-eliminar (aviso)="ObtenerDatos()" [persona]="persona"></app-modal-eliminar> </td>
+      </tr>
+    
+    </tbody>
+  </table></div>
+  

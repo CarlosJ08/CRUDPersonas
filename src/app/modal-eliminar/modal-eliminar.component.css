@@ -1,0 +1,23 @@
+#btnEliminar{
+    background-image: url("../../assets/eliminar.png");
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    border: none;
+    margin-right: 1.5rem;
+    background-color: transparent;
+}
+#btnEliminar:hover{
+    opacity: 0.8;
+}
+#footer{
+    margin-top: 3rem;
+}
+.modal-content{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
